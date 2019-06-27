@@ -1,3 +1,7 @@
+html{
+  font-size: 62.5%; /** reset para rems**/
+}
+
 body{
   font-family: 'lato',sans-serif;
 }
@@ -6,7 +10,7 @@ body{
 /** Globales **/
 
 .contenedor{
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .site-header.inicio{
@@ -14,21 +18,21 @@ body{
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  min-height: 600px;
+  min-height: 60rem;
 }
 
 .barra{
   display: flex;
   justify-content:space-between;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 3rem;
 }
 /**Navegacion**/
 .navegacion a{
   color: white;
   text-decoration: none;
-  font-size: 18px;
-  margin-right: 20px;
+  font-size: 1.8rem;
+  margin-right: 2rem;
 }
 .navegacion a:hover{
   color: blue;
