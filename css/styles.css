@@ -180,3 +180,57 @@ align-items: center;
 .contenido-contacto p {
   font-size: 1.8rem;
 }
+/**Seccion inferior **/
+.seccion-inferior {
+  display: flex;
+  justify-content: space-between;
+}
+.seccion-inferior .blog {
+  flex-basis: 60%;
+
+}
+.seccion-inferior .testimoniales {
+  flex-basis: calc(40% -2rem);
+}
+.entrada-blog {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.entrada-blog .imagen {
+  flex-basis: 40%;
+
+} .entrada-blog:last-of-type{
+  margin-bottom: 2rem;
+}
+.entrada-blog .texto-entrada {
+  flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h3 {
+  margin: 0;
+  line-height: 1.4; /** interlineado en el texto o parrafo **/
+}
+.texto-entrada h4 {
+  margin: 0;
+  line-height: 1.4;
+}
+.testimoniales p {
+  text-align: center;
+}
+.texto-entrada a {
+  color: black;
+  text-decoration: none; /** para borra la linea debajo del titulo **/
+
+}
+.texto-entrada h4::after {
+  content: '';
+  display: block; /** para manipular altura y anchura **/
+  width: 15rem;
+  height: .5rem;
+  background-color: green;
+
+  margin-top: 1rem;
+}
+.texto-entrada span {
+  color: yellow;
+}
