@@ -206,13 +206,9 @@ align-items: center;
 .entrada-blog .texto-entrada {
   flex-basis: calc(60% - 3rem);
 }
-.texto-entrada h3 {
-  margin: 0;
-  line-height: 1.4; /** interlineado en el texto o parrafo **/
-}
 .texto-entrada h4 {
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.4; /** interlineado en el texto o parrafo **/
 }
 .testimoniales p {
   text-align: center;
@@ -233,4 +229,29 @@ align-items: center;
 }
 .texto-entrada span {
   color: yellow;
+}
+.testimonial {
+  background-color: #71B100;
+  font-size: 2.4rem;
+  padding: 2rem;
+  color: #ffffff;
+  border-radius: 2rem; /** para darle borde al cuadrado de un testimonial **/
+
+}
+.testimonial p {
+  text-align: right;
+  }
+.testimonial blockquote::before {
+  content: '';
+  background-image: url(../img/comilla.svg);
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: -2rem;
+}
+.testimonial blockquote {
+  position: relative;
+  padding-left: 5rem;
+  font-weight: 300;
+
 }
