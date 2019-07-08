@@ -48,6 +48,9 @@ h4{
   .d-block {
     display: block!important;
   }
+  .contenido-centrado {
+    max-width: 800px; /** con esto se acomoda el tamaño **/
+  }
   /**Botones**/
   .boton {
     color: #ffffff;/**Blanco**/
@@ -67,6 +70,10 @@ h4{
 }
 
 /**Header**/
+.site-header {
+background-color: #333333;
+padding: 1rem 0 3rem 0; /** 1 arriba 0 a la derecha 3 abajo y 0 a la izquierda ,manecillas del reloj**/
+}
 .site-header.inicio{
   background-image: url(../img/header.jpg);
   background-position: center center;
@@ -129,8 +136,12 @@ h4{
 .contenedor-anuncios {
 display: flex;
 justify-content: space-between;
+flex-wrap: wrap; /** para que se ajuste la posicion del elemento **/
+
 }
 .anuncio {
+  flex-grow: 0;
+  flex-shrink: 0; /** para que las imagenes o elementos no se encojan **/
   flex-basis: calc(33.3% - 1rem);
   border:  1px solid #B5B5B5;
   background-color: #F5F5F5;
@@ -152,6 +163,9 @@ justify-content: space-between;
   padding: 0;
   display: flex;
   justify-content: space-evenly;
+  max-width: 500px;
+  flex:1; /** para que no se compriman los elementos **/
+
 }
 .iconos-caracteristicas li {
   /**flex: 1;**/
@@ -190,7 +204,7 @@ align-items: center;
 
 }
 .seccion-inferior .testimoniales {
-  flex-basis: calc(40% -2rem);
+  flex-basis: calc(20% -2rem);
 }
 .entrada-blog {
   display: flex;
@@ -210,7 +224,7 @@ align-items: center;
   margin: 0;
   line-height: 1.4; /** interlineado en el texto o parrafo **/
 }
-.testimoniales p {
+.testimonial p {
   text-align: center;
 }
 .texto-entrada a {
@@ -224,22 +238,30 @@ align-items: center;
   width: 15rem;
   height: .5rem;
   background-color: green;
-
   margin-top: 1rem;
 }
 .texto-entrada span {
-  color: yellow;
+  color: red;
+}
+.testimoniales {
+  width: 350px;
+  height: 350px;
 }
 .testimonial {
   background-color: #71B100;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   padding: 2rem;
   color: #ffffff;
-  border-radius: 2rem; /** para darle borde al cuadrado de un testimonial **/
-
+  border-radius: 1.4rem; /** para darle borde al cuadrado de un testimonial **/
+  width: 350px;
+  height: 350px;
+}
+element.style {
+  width: 350px;
+  height: 350px;
 }
 .testimonial p {
-  text-align: right;
+  text-align: center;
   }
 .testimonial blockquote::before {
   content: '';
@@ -253,5 +275,45 @@ align-items: center;
   position: relative;
   padding-left: 5rem;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
+}
+.site-footer {
+  background-color: #333333;
+  margin: 0;
+}
+.contenedor-footer {
+  padding: 3rem 0; /** tres arriba y abajo cero izquierda y derecha **/
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  margin: 0;
+  color: #ffffff;
+}
+/** INTERNAS **/
+.resumen-propiedad {
+display: flex; /** para que se ordenen los elementos **/
+justify-content: space-between;
+align-items: center;
+}
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /** para separar en 2 columnas por medio de grillas **/
+  grid-column-gap: 2rem; /** para separar las columnnas en este caso 20 px **/
+}
+.contenido-nosotros blockquote {
+  font-weight: 900;
+  font-size: 2rem;
+  padding: 1rem 0 3rem 0;
+  margin: 0;
+}
+.contacto  h1 {
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+}
+ /** CONTACTO **/
+label {
+  display: block; /**ocupa todo el espacio un elemento con este atributo de display block **/
 
 }
