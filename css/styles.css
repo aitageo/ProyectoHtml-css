@@ -61,6 +61,11 @@ h4{
     margin-top: 3rem;
     display: inline-block;
     text-align: center;
+    border: none;
+    margin-bottom: 2rem;
+  }
+  .boton:hover {
+    cursor: pointer;
   }
   .boton-amarillo {
    background-color: #E08709; /**Amarillo**/
@@ -312,8 +317,48 @@ align-items: center;
   font-family: "Latin Modern Roman 10";
   font-style: oblique;
 }
+.footer-contacto {
+  display: block;
+}
  /** CONTACTO **/
+ .contacto p {
+   font-size: 1.2rem;
+   color:#4f4f4f;
+   margin: 0;
+ }
+ legend {
+   font-size: 2rem;
+   color: #4f4f4f;
+ }
 label {
   display: block; /**ocupa todo el espacio un elemento con este atributo de display block **/
-
+  font-weight: 700;
+  text-transform: uppercase;
+}
+input ([type="radio"]) {
+  width: auto;
+  margin: 0;
+}
+input:not([type="submit"]),textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #e1e1e1;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+}
+select {
+ -webkit-appearance:none;
+ appearance: none;
+}
+textarea {
+  height: 20rem;
+}
+.forma-contacto {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
 }
