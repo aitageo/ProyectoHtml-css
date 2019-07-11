@@ -65,7 +65,7 @@ h4{
     margin-bottom: 2rem;
   }
   .boton:hover {
-    cursor: pointer;
+    cursor: pointer; /** para que aparesca la manito al pasar por ahi **/
   }
   .boton-amarillo {
    background-color: #E08709; /**Amarillo**/
